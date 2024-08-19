@@ -5,23 +5,23 @@ export const Contador = () => {
   const [numero, setNumero] = useState(0);
   const [frase, setFrase] = useState('');
 
-  //   let numero = 0;
-  const sumar = () => {
-    // numero++;
-    setNumero(numero + 1)
-    console.log(numero);
-  };
+ 
+//   const sumar = () => {
+//     // numero++;
+//     setNumero(numero + 1)
+//     
+//   };
   const restar = () => {
-    // numero++;
+    
     setNumero(numero - 1)
-    console.log(numero);
+    
   };
 
   return (
     <section className="container text-center">
       <h2>Practicas de Contador</h2>
       <p>{numero}</p>
-      <button className="btn btn-primary" onClick={sumar}>
+      <button className="btn btn-primary" onClick={()=>setNumero(numero + 1)}>
         +1
       </button>
       <button className="btn btn-danger" onClick={restar}>
