@@ -1,5 +1,6 @@
 import Teoria from "./Teoria";
-
+// en donde esta props se puede guardar directamente como comision o anioActual
+// y se borra el props del return
 const Informacion = (props) => {
     return (
         <article className="mt-4">
